@@ -1,7 +1,7 @@
 # Faast PWA
 Complete source code of the Faast progressive web application.
 
-## Running locally
+## Running locally using npm
 ```
 git clone https://github.com/JeetHathi/faast-pwa.git
 cd faast-pwa
