@@ -81,6 +81,7 @@ class App extends Component {
 			this.removeLoadingText(Consts.LOGGING_IN)
 		}).catch(error => {
 			console.error('Login error.\nErr code: ' + error.code + '\n' + error.message)
+			window.alert('Error when logging in')
 			this.removeLoadingText(Consts.LOGGING_IN)
 		})
 	}
@@ -90,6 +91,7 @@ class App extends Component {
 			this.removeLoadingText(Consts.LOGGING_OUT)
 		}).catch(error => {
 			console.error('Logout error.\nErr code: ' + error.code + '\n' + error.message)			
+			window.alert('Error when logging out')
 			this.removeLoadingText(Consts.LOGGING_OUT)
 		})
 	}
@@ -106,6 +108,7 @@ class App extends Component {
 			this.removeLoadingText(Consts.SIGNING_UP)
 		}).catch(error => {
 			console.error('Signup error. Err code: ' + error.code + '\n' + error.message)
+			window.alert('Error when signing up')
 			this.removeLoadingText(Consts.SIGNING_UP)
 		})
 	}
